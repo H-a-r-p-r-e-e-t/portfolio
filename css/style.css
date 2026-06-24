@@ -21,11 +21,8 @@ nav{
     align-items:center;
 }
 
-.logo{
-    color:white;
-}
-
 .logo a {
+    color: white;
     text-decoration: none;
 }
 
