@@ -150,12 +150,13 @@ footer{
 
 .page-header{
     text-align:center;
-    padding:80px 20px;
+    padding:100px 20px 40px;
 }
 
 .page-header h1{
-    font-size:3rem;
-    margin-bottom:15px;
+    /* font-size:3rem; */
+    font-size:2rem;
+    margin-bottom:20px;
 }
 
 .page-header p{
