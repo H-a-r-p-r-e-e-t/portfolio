@@ -12,16 +12,16 @@
 // document.head.appendChild(linkElement);
 
 //
-const cssLink = document.querySelector('link[rel="stylesheet"]');
+// const cssLink = document.querySelector('link[rel="stylesheet"]');
 
-if (cssLink) {
-    const timestamp = new Date().getTime();
-    cssLink.href = `css/style.css?t=${timestamp}`;
-}
+// if (cssLink) {
+//     const timestamp = new Date().getTime();
+//     cssLink.href = `css/style.css?t=${timestamp}`;
+// }
 
-const jsLink = document.querySelector('script[src="js/script.js"]');
+// const jsLink = document.querySelector('script[src="js/script.js"]');
 
-if (jsLink) {
-    const timestamp = new Date().getTime();
-    jsLink.href = `js/script.js?t=${timestamp}`;
-}
+// if (jsLink) {
+//     const timestamp = new Date().getTime();
+//     jsLink.href = `js/script.js?t=${timestamp}`;
+// }
