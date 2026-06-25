@@ -12,14 +12,14 @@
 // document.head.appendChild(linkElement);
 
 //
-const cssLink = document.querySelector('link[href="css/style.css"]');
+const cssLink = document.querySelector('link[rel="stylesheet"]');
 
 if (cssLink) {
     const timestamp = new Date().getTime();
     cssLink.href = `css/style.css?t=${timestamp}`;
 }
 
-const jsLink = document.querySelector('link[src="js/script.js"]');
+const jsLink = document.querySelector('script[src="js/script.js"]');
 
 if (jsLink) {
     const timestamp = new Date().getTime();
