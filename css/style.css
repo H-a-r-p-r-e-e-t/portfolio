@@ -275,6 +275,14 @@ left:35px;
 right:35px;
 }
 
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+    user-select:none;
+}
+
 @media(max-width:900px){
 
     .hero{
@@ -300,4 +308,46 @@ right:35px;
         flex-wrap:wrap;
         justify-content:center;
     }
+}
+
+
+@media (max-width:768px){
+
+    .navbar{
+        position:relative;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar ul{
+
+        position:absolute;
+
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        background:#0f172a;
+
+        flex-direction:column;
+
+        display:none;
+
+        padding:20px 0;
+
+        gap:20px;
+
+        text-align:center;
+
+        box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+    }
+
+    .navbar ul.active{
+        display:flex;
+    }
+
 }
