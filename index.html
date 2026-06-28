@@ -6,17 +6,6 @@
     <title>Harpreet Singh | Portfolio</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    // (function() {
-    //   const link = document.createElement('link');
-    //   link.rel = 'stylesheet';
-
-    //   const timestamp = new Date().getTime();
-    //   link.href = 'css/style.css?v=' + timestamp;
-
-    //   document.head.appendChild(link);
-    // })();
-  </script>
 </head>
 <body>
 
@@ -84,7 +73,7 @@
 
         <div class="project-box">
 
-            <img src="images/pulse_oximeter.webp" alt="Project">
+            <img src="images/pulse_oximeter.webp" alt="Project" class="lightbox-img">
 
             <div>
                 <h3>Arduino Based Pulse Oximeter</h3>
@@ -102,7 +91,18 @@
             © 2026 Harpreet Singh | DAV Police Public School
         </p>
     </footer>
-    
+    <div id="lightbox">
+
+    <span id="close">&times;</span>
+
+    <button id="prev">&#10094;</button>
+
+    <img id="lightboxImage">
+
+    <button id="next">&#10095;</button>
+
+</div>
+
 <script src="js/script.js" defer></script>
 </body>
 </html>
