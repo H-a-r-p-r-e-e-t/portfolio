@@ -298,55 +298,48 @@ right:35px;
     .project-box{
         flex-direction:column;
     }
-
-    nav{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
 }
 
 
 @media (max-width:768px){
 
-    .navbar{
-        position:relative;
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
     }
 
     .menu-toggle{
         display:block;
+        font-size:32px;
     }
 
-    .navbar ul{
+    #nav-links{
 
         position:absolute;
-
         top:100%;
         left:0;
 
         width:100%;
 
-        background:#0f172a;
+        display:none;
 
         flex-direction:column;
 
-        display:none;
+        background:#0f172a;
 
         padding:20px 0;
 
-        gap:20px;
-
         text-align:center;
 
-        box-shadow:0 15px 30px rgba(0,0,0,.2);
+        gap:20px;
+
+        z-index:999;
 
     }
 
-    .navbar ul.active{
+    #nav-links.active{
         display:flex;
     }
 
