@@ -6,17 +6,6 @@
     <title>Academics - Harpreet Singh</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    // (function() {
-    //   const link = document.createElement('link');
-    //   link.rel = 'stylesheet';
-
-    //   const timestamp = new Date().getTime();
-    //   link.href = 'css/style.css?v=' + timestamp;
-
-    //   document.head.appendChild(link);
-    // })();
-  </script>
   <style>
     .result-img{
     width:100%;
@@ -83,9 +72,9 @@
     </ul>
 </div>
 
-        <div class="card">
+        <div class="card gallery">
     <h2>Board Result</h2>
-        <img src="images/10_marksheet.webp" class="result-img">
+        <img src="images/10_marksheet.webp" class="result-img lightbox-img">
 </div>
         
 </section>
@@ -94,7 +83,19 @@
             © 2026 Harpreet Singh | DAV Police Public School
         </p>
     </footer>
-    <script src="js/script.js" defer></script>
+
+    <div id="lightbox">
+
+    <span id="close">&times;</span>
+
+    <button id="prev">&#10094;</button>
+
+    <img id="lightboxImage">
+
+    <button id="next">&#10095;</button>
+
+</div>
+<script src="js/script.js" defer></script>
 
 </body>
 </html>
