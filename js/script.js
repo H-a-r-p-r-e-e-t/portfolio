@@ -1,31 +1,3 @@
-// css file time
-// const cssPath = "css/style.css"; 
-
-// const timestamp = new Date().getTime(); 
-
-// const linkElement = document.createElement("link");
-// linkElement.rel = "stylesheet";
-// linkElement.type = "text/css";
-
-// linkElement.href = `${cssPath}?t=${timestamp}`;
-
-// document.head.appendChild(linkElement);
-
-//
-// const cssLink = document.querySelector('link[rel="stylesheet"]');
-
-// if (cssLink) {
-//     const timestamp = new Date().getTime();
-//     cssLink.href = `css/style.css?t=${timestamp}`;
-// }
-
-// const jsLink = document.querySelector('script[src="js/script.js"]');
-
-// if (jsLink) {
-//     const timestamp = new Date().getTime();
-//     jsLink.href = `js/script.js?t=${timestamp}`;
-// }
-
 const images = document.querySelectorAll(".lightbox-img");
 
 const lightbox = document.getElementById("lightbox");
@@ -119,5 +91,35 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowLeft")
 
         prev.click();
+
+});
+
+// hamburger
+
+const menuToggle=document.getElementById("menu-toggle");
+const navLinks=document.getElementById("nav-links");
+
+menuToggle.addEventListener("click",()=>{
+
+    navLinks.classList.toggle("active");
+
+});
+
+document.querySelectorAll("#nav-links a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+menuToggle.addEventListener("click",()=>{
+
+    navLinks.classList.toggle("active");
+
+    menuToggle.textContent =
+        navLinks.classList.contains("active") ? "✕" : "☰";
 
 });
