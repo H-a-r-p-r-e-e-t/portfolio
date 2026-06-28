@@ -251,8 +251,10 @@ width:55px;
 height:55px;
 border:none;
 border-radius:50%;
-background:rgba(255,255,255,.15);
-color:white;
+/* background:rgba(255,255,255,.15); */
+background:rgb(255 255 255 / 5%);
+/* color:white; */
+color:#ffffff78;
 font-size:28px;
 cursor:pointer;
 backdrop-filter:blur(10px);
